@@ -1,4 +1,4 @@
-package main.java.com.filmfest;
+package com.filmfest;
 
 public class Dummy {
     public static void main(String[] args) {
