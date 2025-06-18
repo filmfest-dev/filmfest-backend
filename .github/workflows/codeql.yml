@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ develop ]
   schedule:
-    - cron: '0 3 * * 1' # Every Monday at 03:00 UTC
+    - cron: '0 3 * * 1'
 
 jobs:
   analyze:
@@ -33,7 +33,7 @@ jobs:
           languages: ${{ matrix.language }}
 
       - name: Build project
-        run: echo "No build step needed yet" # ./gradlew build -x test
+        run: ./gradlew assemble -x test
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
