@@ -1,1 +1,2 @@
 rootProject.name = 'filmfest-backend'
+include 'filmfest-film'
