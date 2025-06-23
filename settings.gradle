@@ -1,2 +1,3 @@
 rootProject.name = 'filmfest-backend'
 include 'filmfest-film'
+include 'filmfest-user'
