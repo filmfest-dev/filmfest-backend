@@ -1,4 +1,4 @@
-package com.filmfest;
+package com.filmfest.film;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
