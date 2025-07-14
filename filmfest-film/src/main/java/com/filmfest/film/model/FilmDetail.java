@@ -26,6 +26,6 @@ public class FilmDetail {
     private String director;
     private String posterUrl;
     private String url;
-    private String country;
+    private List<String> country;
     private int year;
 }

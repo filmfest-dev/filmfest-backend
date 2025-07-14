@@ -6,7 +6,6 @@ import com.filmfest.film.model.FilmDetail;
 public class FilmDetailMapper {
 
     private FilmDetailMapper() {
-        // Prevent instantiation
     }
 
     public static FilmDetail toEntity(FilmDetailDto dto) {
@@ -37,16 +36,4 @@ public class FilmDetailMapper {
                 entity.getUrl()
         );
     }
-
-    /*
-    private String language;
-    private String title;
-    private String synopsis;
-    private String duration;
-    private String posterUrl;
-    private String director;
-    private int year;
-    private String country;
-    private String url;
-     */
 }

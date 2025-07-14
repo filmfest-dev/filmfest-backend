@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,6 +17,6 @@ public class FilmDetailDto {
     private String posterUrl;
     private String director;
     private int year;
-    private String country;
+    private List<String> country;
     private String url;
 }
