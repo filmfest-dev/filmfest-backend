@@ -1,24 +1,22 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.5.0' apply false
-    id 'io.spring.dependency-management' version '1.1.5' apply false
+    id 'org.springframework.boot' version '3.3.12'
+    id 'io.spring.dependency-management' version '1.1.7'
 }
 
-allprojects {
-    group = 'com.filmfest'
-    version = '0.0.1-SNAPSHOT'
+group = 'com.filmfest.backend'
+version = '0.0.1-SNAPSHOT'
 
-    repositories {
-        mavenCentral()
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
-subprojects {
-    apply plugin: 'java'
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
 
-    java {
-        toolchain {
-            languageVersion = JavaLanguageVersion.of(21)
-        }
-    }
+repositories {
+    mavenCentral()
 }
